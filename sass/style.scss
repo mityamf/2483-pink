@@ -2,7 +2,10 @@
 
 @import 'global/variables.scss';
 @import 'global/fonts.scss';
+@import 'global/common.scss';
+@import 'blocks/main-header.scss';
+@import 'blocks/promo-block.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/rateplans.scss';
+@import 'blocks/contact-us.scss';
 
-body {
-  font-family: $main-font;
-}
