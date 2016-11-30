@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="logo" href="index.html"><img src="http://placehold.it/75x22" alt=""></a>
+        <div class="burger">
+          <span class="burger__cross">X</span>
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__link"><a href="#">Главная</a></li>
+            <li class="main-menu__link"><a href="#">Фотографии</a></li>
+            <li class="main-menu__link"><a href="#">Конкурс</a></li>
+            <li class="main-menu__link"><a href="#">Html Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h2 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </header>
+
+    <main class="page-main">
+      <p class="promo-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form action="https://echo.htmlacademy.ru/" class="contest-form" id="contest-form" method="post">
+        <fieldset class="contest-form__block">
+          <div class="contest-form__group">
+            <label class="contest-form__label" for="lastname">Фамилия:</label>
+            <input class="contest-form__input" type="text" id="lastname" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="contest-form__group">
+            <label class="contest-form__label" for="firstname">Имя:</label>
+            <input class="contest-form__input" type="text" id="firstname" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="contest-form__group">
+            <label class="contest-form__label" for="middlename">Отчество:</label>
+            <input class="contest-form__input" type="text" id="middlename" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="contest-form__block">
+          <legend class="contest-form__description">Ваши безбашенные достижения в путешествии</legend>
+
+          <input class="contest-form__input-check" type="checkbox" id="selfie" checked >
+          <label class="contest-form__label-check" for="selfie">Сделал селфи с акулой</label>
+
+          <input class="contest-form__input-check" type="checkbox" id="got-burned" checked>
+          <label class="contest-form__label-check" for="got-burned">Обгорел на пляже</label>
+
+          <input class="contest-form__input-check" type="checkbox" id="saw-chuck-norris">
+          <label class="contest-form__label-check" for="saw-chuck-norris">Видел Чака Норриса</label>
+
+          <input class="contest-form__input-check" type="checkbox" id="souvenirs">
+          <label class="contest-form__label-check" for="souvenirs">Накупил сувениров</label>
+
+          <input class="contest-form__input-check" type="checkbox" id="tower">
+          <label class="contest-form__label-check" for="tower">Удержал башню</label>
+
+          <input class="contest-form__input-check" type="checkbox" id="destroyed-hotel">
+          <label class="contest-form__label-check" for="destroyed-hotel">Разгромил отель</label>
+        </fieldset>
+
+        <fieldset class="contest-form__block">
+          <div class="contest-form__group">
+            <label class="contest-form__label" for="phone">Номер телефона</label>
+            <input class="contest-form__input" type="tel" id="phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="contest-form__group">
+            <label class="contest-form__label" for="email">Адресок почты</label>
+            <input class="contest-form__input" type="email" id="email" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="contest-form__block">
+          <legend class="contest-form__description">С каким приложением путешествовали?</legend>
+          <input class="contest-form__input-radio" type="radio" name="platform" id="ios">
+          <label class="contest-form__label-radio" for="ios"></label>
+
+          <input class="contest-form__input-radio" type="radio" name="platform" id="android">
+          <label class="contest-form__label-radio" for="android"></label>
+
+          <input class="contest-form__input-radio" type="radio" name="platform" id="windows">
+          <label class="contest-form__label-radio" for="windows"></label>
+        </fieldset>
+
+        <fieldset class="contest-form__block">
+          <legend class="contest-form__description">Опишите свои эмоции</legend>
+          <textarea class="contest-form__textarea" rows="5"></textarea>
+        </fieldset>
+
+        <button class="contest-form__btn btn" type="submit">Отправить форму</button>
+        <p class="contest-form__note"><sup>*</sup> - обязательные поля</p>
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <a class="main-footer__logo" href="index.html"></a>
+      <div class="social">
+        <a class="social__link social__link--tw" href="#"></a>
+        <a class="social__link social__link--fb" href="#"></a>
+        <a class="social__link social__link--youtube" href="#"></a>
+      </div>
+      <div class="copyright">Разработано <a class="copyright__link" href="http://htmlacademy.ru" target="_blank"></a></div>
+    </footer>
+
+
+
+  </body>
+</html>
