@@ -14,64 +14,80 @@
           <span class="main-menu__toggle">X</span>
           <ul class="main-menu__list">
             <li class="main-menu__link"><a href="#">Главная</a></li>
-            <li class="main-menu__link"><a href="#">Фотографии</a></li>
-            <li class="main-menu__link"><a href="#">Конкурс</a></li>
+            <li class="main-menu__link"><a href="photo.html">Фотографии</a></li>
+            <li class="main-menu__link"><a href="form.html">Конкурс</a></li>
             <li class="main-menu__link"><a href="#">Html Academy</a></li>
           </ul>
         </nav>
+        <div class="intro intro--index">
+          <div class="intro__download">
+            <a class="intro__download-link">Скачать приложение</a>
+            <div class="intro__apps">
+              <a class="intro__apps-link" href="#"></a>
+              <a class="intro__apps-link" href="#"></a>
+              <a class="intro__apps-link" href="#"></a>
+            </div>
+            <p class="intro__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="page-main">
-      <section class="download">
-        <h1 class="download__header">Скачать приложение</h1>
-        <ul class="appstores">
-          <li class="appstores__item appstores__item--apple"><a href="#"></a></li>
-          <li class="appstores__item appstores__item--android"><a href="#"></a></li>
-          <li class="appstores__item appstores__item--windows"><a href="#"></a></li>
-        </ul>
-        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-
-      <section class="features">
-        <h2 class="features__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-        <h3 class="features__subheader">Поднимает настроение</h3>
-        <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h3 class="features__subheader">Меняет мир вокруг</h3>
-        <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h3 class="features__subheader">Заводит новых друзей</h3>
-        <p class="features__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      <section class="promo-block">
+        <p class="promo-block__title">Устали от серости мегаполиса?</p>
+        <p class="promo-block__title">Нам есть, что вам предложить!</p>
+        <div class="promo-block__features">
+          <div class="promo-block__features-item">
+            <b class="promo-block__features-title">Поднимает настроение</b>
+            <p class="promo-block__features-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="promo-block__features-item">
+            <b class="promo-block__features-title">Меняет мир вокруг</b>
+            <p class="promo-block__features-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="promo-block__features-item">
+            <b class="promo-block__features-title">Заводит новых друзей</b>
+            <p class="promo-block__features-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
       </section>
 
       <section class="reviews slider">
-        <ul class="reviews__items">
-          <li class="reviews__item reviews__item--current">
+        <input type="radio" class="reviews__input-control" id="review-1" name="reviews">
+        <input type="radio" class="reviews__input-control" id="review-2" name="reviews">
+        <input type="radio" class="reviews__input-control" id="review-3" name="reviews">
+        <div class="reviews__list">
+          <blockquote class="reviews__item reviews__item--current">
             <b class="reviews__author">Николай Петров</b>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
+          </blockquote>
 
-          <li class="reviews__item">
+          <blockquote class="reviews__item">
             <b class="reviews__author">Сергей Иванов</b>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
+          </blockquote>
 
-          <li class="reviews__item">
+          <blockquote class="reviews__item">
             <b class="reviews__author">Сергей Иванов</b>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
-        </ul>
+          </blockquote>
+        </div>
 
-        <ul class="reviews__toggles slider__toggles">
-          <li class="slider__toggle slider__toggle--current"></li>
-          <li class="slider__toggle"></li>
-          <li class="slider__toggle"></li>
-        </ul>
+        <div class="reviews__controls slider__controls">
+          <label class="reviews__toggle slider__toggle reviews__toggle--active" for="review-1"></label>
+          <label class="reviews__toggle slider__toggle" for="review-2"></label>
+          <label class="reviews__toggle slider__toggle" for="review-3"></label>
+        </div>
       </section>
 
       <section class="rateplans slider">
+        <input type="radio" class="rateplans__input-control" id="rateplan-1" name="rateplans">
+        <input type="radio" class="rateplans__input-control" id="rateplan-2" name="rateplans">
+        <input type="radio" class="rateplans__input-control" id="rateplan-3" name="rateplans">
         <ul class="rateplans__items">
           <li class="rateplans__item">
-            <div class="prices-table">
+rateplan-            <div class="prices-table">
               <div class="prices-table__header prices-table__header--hit">Стандарт 3,99 USD</div>
               <div class="prices-table__row prices-table__row--exist">Розовый фильтр</div>
               <div class="prices-table__row prices-table__row--exist">Смайлики</div>
@@ -96,11 +112,11 @@
           </li>
         </ul>
 
-        <ul class="rateplans__toggles slider__toggles">
-          <li class="slider__toggle slider__toggle--current"></li>
-          <li class="slider__toggle"></li>
-          <li class="slider__toggle"></li>
-        </ul>
+        <div class="rateplans__controls slider__controls">
+          <label class="rateplans__toggle slider__toggle slider__toggle--active" for="rateplan-1"></label>
+          <label class="rateplans__toggle slider__toggle" for="rateplan-2"></label>
+          <label class="rateplans__toggle slider__toggle" for="rateplan-3"></label>
+        </div>
       </section>
 
       <section class="contact-us">
