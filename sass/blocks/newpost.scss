@@ -1,0 +1,14 @@
+.newpost-upload {
+  background-color: $grey-background-color;
+}
+
+.newpost__text {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+.newpost-upload {
+  text-align: center;
+  @include container();
+  padding-top: 20px;
+}

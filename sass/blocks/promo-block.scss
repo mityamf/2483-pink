@@ -14,6 +14,7 @@
 
 .promo-block__features {
   background-color: $grey-background-color;
+  @include container();
 }
 .promo-block__features-item {
   margin-bottom: 40px;
@@ -26,7 +27,7 @@
 }
 
 .promo-block__wrapper {
-  @include container();
+  //@include container();
   padding-bottom: 320px;
   background: url('../img/iphone-screen-mobile@1x.png') no-repeat 50% bottom;
   // &::after {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -135,12 +136,9 @@
       </section>
 
       <section class="newpost">
-        <form action="https://echo.htmlacademy.ru/" class="newpost-upload" method="post">
-          <p class="newpost-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <div class="newpost-upload__photo-preview">
-            <img src="http://placehold.it/280x375" alt="">
-          </div>
-
+        <p class="newpost__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="newpost-upload" action="https://echo.htmlacademy.ru/" method="post">
+          <img class="newpost-upload__photo-preview" src="http://placehold.it/280x375" alt="">
           <div class="tabs">
             <div class="tabs__item">
               <input class="tabs__switcher" type="radio" id="tab1" name="tabs" checked>
