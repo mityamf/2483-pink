@@ -1,0 +1,24 @@
+.contest-form {
+  outline: 1px solid pink;
+}
+
+.contest-form__block {
+  padding: 0 20px;
+  border: none;
+  margin-bottom: 40px;
+    &--grey {
+    background-color: $grey-background-color;
+  }
+}
+
+.contest-form__label {
+  color: $pink-color;
+  text-transform: uppercase;
+}
+
+.contest-form__description {
+  color: $pink-color;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 18px;
+}

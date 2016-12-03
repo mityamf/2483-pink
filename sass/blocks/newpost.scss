@@ -1,5 +1,5 @@
-.newpost-upload {
-  background-color: $grey-background-color;
+.newpost {
+  outline: 1px solid purple;
 }
 
 .newpost__text {
@@ -8,7 +8,9 @@
   margin-bottom: 45px;
 }
 .newpost-upload {
+  background-color: $grey-background-color;
   text-align: center;
   @include container();
   padding-top: 20px;
+  padding-bottom: 40px;
 }

@@ -1,10 +1,18 @@
 .gallery {
   text-align: center;
   margin-bottom: 45px;
+  outline: 1px solid blue;
 }
 
 .gallery-item {
   margin-bottom: 20px;
+}
+
+.gallery-item__pic {
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: block;
+  width: 100%;
 }
 
 .promo-text {
