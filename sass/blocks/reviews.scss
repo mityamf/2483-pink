@@ -8,6 +8,10 @@
   display: none;
 }
 
+.reviews__item {
+  margin: 0;
+  padding: 0 20px;
+}
 .reviews__author {
   font-size: $middle-font-size;
   font-family: 'OpenSansBold';

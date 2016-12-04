@@ -13,3 +13,11 @@
   font-family: 'OpenSansLight';
   font-size: $biggest-font-size;
 }
+
+@mixin clearfix() {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}

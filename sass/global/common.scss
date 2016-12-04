@@ -4,3 +4,11 @@ body {
   color: $main-font-color;
   background-color: $white-color;
 }
+
+.visibility--hidden {
+  display: none;
+  @media (#{$tablet-width}) {
+    display: block;
+  }
+}
+
