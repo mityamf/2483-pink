@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="logo" href="index.html"><img src="http://placehold.it/75x22" alt=""></a>
-        <div class="burger">
-          <span class="burger__cross">X</span>
-        </div>
         <nav class="main-menu">
+          <span class="main-menu__toggle">X</span>
           <ul class="main-menu__list">
-            <li class="main-menu__link"><a href="#">Главная</a></li>
-            <li class="main-menu__link"><a href="#">Фотографии</a></li>
+            <li class="main-menu__link"><a href="index.html">Главная</a></li>
+            <li class="main-menu__link"><a href="photo.html">Фотографии</a></li>
             <li class="main-menu__link"><a href="#">Конкурс</a></li>
             <li class="main-menu__link"><a href="#">Html Academy</a></li>
           </ul>
         </nav>
+        <div class="intro">
+          <h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </div>
-      <h2 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </header>
 
     <main class="page-main">
@@ -42,9 +44,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="contest-form__block">
-          <legend class="contest-form__description">Ваши безбашенные достижения в путешествии</legend>
-
+        <fieldset class="contest-form__block contest-form__block--grey">
+          <p class="contest-form__description">Ваши безбашенные достижения в путешествии</p>
           <input class="contest-form__input-check" type="checkbox" id="selfie" checked >
           <label class="contest-form__label-check" for="selfie">Сделал селфи с акулой</label>
 
@@ -75,25 +76,27 @@
           </div>
         </fieldset>
 
-        <fieldset class="contest-form__block">
-          <legend class="contest-form__description">С каким приложением путешествовали?</legend>
+        <fieldset class="contest-form__block contest-form__block--grey">
+          <p class="contest-form__description">С каким приложением путешествовали?</p>
           <input class="contest-form__input-radio" type="radio" name="platform" id="ios">
-          <label class="contest-form__label-radio" for="ios"></label>
+          <label class="contest-form__label-radio" for="ios">Pink для iOS</label>
 
           <input class="contest-form__input-radio" type="radio" name="platform" id="android">
-          <label class="contest-form__label-radio" for="android"></label>
+          <label class="contest-form__label-radio" for="android">Pink на Android</label>
 
           <input class="contest-form__input-radio" type="radio" name="platform" id="windows">
-          <label class="contest-form__label-radio" for="windows"></label>
+          <label class="contest-form__label-radio" for="windows">Windows phone</label>
         </fieldset>
 
         <fieldset class="contest-form__block">
-          <legend class="contest-form__description">Опишите свои эмоции</legend>
+          <p class="contest-form__description">Опишите свои эмоции</p>
           <textarea class="contest-form__textarea" rows="5"></textarea>
         </fieldset>
 
-        <button class="contest-form__btn btn" type="submit">Отправить форму</button>
-        <p class="contest-form__note"><sup>*</sup> - обязательные поля</p>
+        <div class="contest-form__block">
+          <button class="contest-form__btn btn" type="submit">Отправить форму</button>
+          <p class="contest-form__note"><sup>*</sup> - обязательные поля</p>
+        </div>
       </form>
     </main>
 

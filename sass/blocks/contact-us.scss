@@ -1,0 +1,19 @@
+.contact-us {
+  outline: 1px solid magenta;
+  text-align: center;
+}
+
+.contact-us__title {
+  @include header-typography();
+}
+
+.contact-us__subheader {
+  font-family: 'OpenSansBold';
+  font-size: $middle-font-size;
+  display: block;
+}
+
+.contact-us__link, .contact-us__text {
+  @include header-typography();
+  color: $pink-color;
+}

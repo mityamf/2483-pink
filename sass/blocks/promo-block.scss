@@ -1,0 +1,42 @@
+.promo-block {
+  outline: 1px solid green;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.promo-block__title {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  font-family: $font-light;
+  font-size: $biggest-font-size;
+}
+
+.promo-block__features {
+  background-color: $grey-background-color;
+  @include container();
+}
+.promo-block__features-item {
+  margin-bottom: 40px;
+
+}
+.promo-block__features-title {
+  font-family: $font-bold;
+  font-size: $middle-font-size;
+  margin-bottom: 20px;
+}
+
+.promo-block__wrapper {
+  //@include container();
+  padding-bottom: 320px;
+  background: url('../img/iphone-screen-mobile@1x.png') no-repeat 50% bottom;
+  // &::after {
+  //   content: '';
+  //   display: block;
+  //   background: url('../img/iphone-screen-mobile@1x.png') no-repeat;
+  //   width: 157px;
+  //   height: 320px;
+  //   position: absolute;
+  //   left: calc(50% - 79px);
+  // }
+}

@@ -1,0 +1,45 @@
+.contest-form {
+  outline: 1px solid pink;
+}
+
+.contest-form__block {
+  padding: 0 20px;
+  border: none;
+  margin-bottom: 40px;
+    &--grey {
+    background-color: $grey-background-color;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.contest-form__label {
+  color: $pink-color;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 20px;
+}
+.contest-form__label-radio {
+  display: block;
+  font-size: $middle-font-size;
+  line-height: 30px;
+  margin-left: 70px;
+}
+
+.contest-form__label-check {
+  display: block;
+  font-size: $middle-font-size;
+  line-height: 30px;
+  margin-left: 70px;
+}
+
+.contest-form__description {
+  color: $pink-color;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 18px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}

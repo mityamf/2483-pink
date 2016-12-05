@@ -1,0 +1,48 @@
+.gallery {
+  text-align: center;
+  margin-bottom: 45px;
+  outline: 1px solid blue;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.gallery-item__pic {
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+}
+
+.promo-text {
+  text-align: center;
+  @include container();
+  margin-bottom: 50px;
+}
+.gallery-item__caption {
+  background-color: $grey-background-color;
+  margin: 0 20px;
+  padding: 20px 20px 30px;
+  text-align: left;
+}
+
+.gallery-item__author-name {
+  font-family: 'OpenSansBold';
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.gallery-item__author-time {
+  font-family: 'OpenSansLight';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery-item__likes {
+  margin-left: 30px;
+  color: $pink-color;
+}
+.gallery-item__likes-text {
+  display: inline-block;
+}

@@ -1,0 +1,15 @@
+@mixin container() {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (#{$tablet-width}) {
+    width: 620px;
+    padding: 0 40px;
+  }
+}
+
+@mixin header-typography() {
+  font-family: 'OpenSansLight';
+  font-size: $biggest-font-size;
+}
