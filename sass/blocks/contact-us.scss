@@ -2,18 +2,31 @@
   outline: 1px solid magenta;
   text-align: center;
 }
+.contact-us__wrapper {
+  @include container();
+}
 
 .contact-us__title {
   @include header-typography();
+  margin-bottom: 30px;
 }
 
 .contact-us__subheader {
   font-family: 'OpenSansBold';
   font-size: $middle-font-size;
   display: block;
+  margin-top: 20px;
 }
 
 .contact-us__link, .contact-us__text {
   @include header-typography();
   color: $pink-color;
+}
+
+.contact-us__map {
+  background: url('../../img/bg-map-mobile@1x.png') no-repeat 0 0 / 100% auto;
+  //background-size: 320px 431px;
+  width: 100%;
+  height: 431px;
+
 }

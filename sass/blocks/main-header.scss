@@ -1,44 +1,15 @@
 .main-header {
-  background: rgba(0, 0, 0, 0) url("../img/bg-back-mobile@1x.jpg") no-repeat scroll 50% 0 / cover;
+  background: rgba(0, 0, 0, 0) url("../../img/bg-back-mobile@1x.jpg") no-repeat scroll 50% 0 / cover;
   outline: 1px solid red;
   color: $white-color;
   margin-bottom: 40px;
   @include clearfix();
-
-  @media (#{$tablet-width}) {
-    position: relative;
-    padding-bottom: 400px;
-    &::before {
-      content: '';
-      width: 470px;
-      height: 550px;
-      background: url('../../img/iphone-hand-mobile@1x.png') no-repeat;
-      background-size: 470px 550px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
 }
 
 .main-header__wrapper {
-  padding-bottom: 400px;
-  position: relative;
-
-  &::before {
-    content: '';
-    width: 258px;
-    height: 286px;
-    background: url('../../img/iphone-hand-mobile@1x.png') no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  @media (#{$tablet-width}) {
-    padding-bottom: 0px;
-    &::before {
-      background: none;
-    }
+  padding-bottom: 320px;
+  &--inner {
+    padding-bottom: 0;
   }
 }
 
@@ -46,9 +17,6 @@
   @include clearfix();
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0 20px;
-  @media (#{$tablet-width}) {
-    padding: 0 40px;
-  }
 }
 
 .logo {
@@ -76,12 +44,18 @@
   background-color: #1d2631;
   padding: 28px 20px 35px;
   text-align: center;
-  position: relative;
-
-  @media (#{$tablet-width}) {
-    width: 300px;
-    float: left;
-    background: none;
+  &--index {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 258px;
+      height: 286px;
+      position: absolute;
+      top: -286px;
+      left: 0;
+      background: url('../../img/iphone-hand-mobile@1x.png') no-repeat;
+    }
   }
 }
 
