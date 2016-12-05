@@ -4,7 +4,7 @@
   padding: 0 20px;
 
   @media (#{$tablet-width}) {
-    width: 620px;
+    min-width: 620px;
     padding: 0 40px;
   }
 }
@@ -12,4 +12,12 @@
 @mixin header-typography() {
   font-family: 'OpenSansLight';
   font-size: $biggest-font-size;
+}
+
+@mixin clearfix() {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
 }

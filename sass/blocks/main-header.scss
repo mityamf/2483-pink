@@ -1,11 +1,78 @@
 .main-header {
-  background: rgba(0, 0, 0, 0) url("../img/bg-back-mobile@1x.jpg") no-repeat scroll 50% 0 / cover;
+  background: rgba(0, 0, 0, 0) url("../../img/bg-back-mobile@1x.jpg") no-repeat scroll 50% 0 / cover;
   outline: 1px solid red;
   color: $white-color;
   margin-bottom: 40px;
+  @include clearfix();
 }
 
 .main-header__wrapper {
-  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 320px;
+  &--inner {
+    padding-bottom: 0;
+  }
 }
 
+.main-header__nav-wrapper {
+  @include clearfix();
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+}
+
+.logo {
+  padding: 20px 0;
+  width: 75px;
+  float: left;
+}
+
+.main-menu {
+  color: $white-color;
+  float: right;
+
+}
+
+.main-menu__list {
+  list-style: none;
+}
+
+.main-menu__link a {
+  color: $white-color;
+  text-decoration: none;
+}
+
+.intro {
+  background-color: #1d2631;
+  padding: 28px 20px 35px;
+  text-align: center;
+  &--index {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 258px;
+      height: 286px;
+      position: absolute;
+      top: -286px;
+      left: 0;
+      background: url('../../img/iphone-hand-mobile@1x.png') no-repeat;
+    }
+  }
+}
+
+.intro__download-link {
+  color: $white-color;
+  text-decoration: none;
+  font-size: $middle-font-size;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 3px solid $white-color;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.intro__download-text {
+  font-family: 'OpenSansLight';
+  margin-bottom: 0;
+
+
+}
