@@ -150,12 +150,14 @@
     margin-right: 40px;
   }
   .intro {
-    background: rgba(0, 0, 0, 0) url("../img/iphone-hand-mobile@1x.png") no-repeat scroll 70% bottom / 470px auto;
     padding-top: 0;
+  }
+  .intro--index {
+    background: rgba(0, 0, 0, 0) url("../img/iphone-hand-mobile@1x.png") no-repeat scroll 70% bottom / 470px auto;
     min-height: 620px;
     margin-bottom: 50px;
-
   }
+
   .intro__download {
     width: 300px;
     margin-left: 40px;
