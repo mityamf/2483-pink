@@ -99,22 +99,24 @@
   color: $white-color;
   margin-bottom: 40px;
   text-align: center;
+  &--index {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 258px;
+      height: 286px;
+      position: absolute;
+      background: rgba(0, 0, 0, 0) url("../img/iphone-hand-mobile@1x.png") no-repeat;
+      top: 114px;
+    }
+
+  }
 }
 
 .intro__download {
   background-color: $main-font-color;
   padding: 20px;
-  position: relative;
-  &::before {
-    content: '';
-    display: block;
-    width: 258px;
-    height: 286px;
-    position: absolute;
-    top: -286px;
-    left: 0;
-    background: url('../img/iphone-hand-mobile@1x.png') no-repeat;
-  }
 }
 
 .intro__title {
@@ -156,6 +158,9 @@
     background: rgba(0, 0, 0, 0) url("../img/iphone-hand-mobile@1x.png") no-repeat scroll 70% bottom / 470px auto;
     min-height: 620px;
     margin-bottom: 50px;
+    &::before {
+      background-image: none;
+    }
   }
 
   .intro__download {
