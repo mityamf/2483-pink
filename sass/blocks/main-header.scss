@@ -2,10 +2,10 @@
   background: rgba(0, 0, 0, 0) url('../img/bg-back-mobile@1x.jpg') no-repeat scroll 50% 0 / cover;
 }
 
-.main-header__logo-wrapper {
+.main-header__navigation {
   background-color: $main-font-color;
-  padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black; // заменить на shadow
@@ -13,9 +13,11 @@
 
 .logo {
   flex-grow: 1;
+  padding: 20px;
 }
 
 .main-header__toggle {
+  margin-right: 20px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -64,14 +66,14 @@
 .main-header--menu-closed .main-menu {
   display: none;
 }
-.main-header--menu-closed .main-header__logo-wrapper {
+.main-header--menu-closed .main-header__navigation {
   border: none;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu {
   color: $white-color;
-  //width: 100%;
+  width: 100%;
 }
 
 .main-menu__list {
@@ -90,17 +92,13 @@
   font-family: 'OpenSansBold';
   font-size: $middle-font-size;
   text-transform: uppercase;
-  border-bottom: 1px solid black; //заменить на shadow
+  border-top: 1px solid black; //заменить на shadow
 }
 .intro {
   padding-top: 400px;
   color: $white-color;
   margin-bottom: 40px;
   text-align: center;
-  //@include clearfix();
-  &--index {
-   // position: relative;
-  }
 }
 
 .intro__download {
@@ -118,6 +116,13 @@
     background: url('../img/iphone-hand-mobile@1x.png') no-repeat;
   }
 }
+
+.intro__title {
+  font-family: 'OpenSansLight';
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
 .intro__download-link {
   color: $white-color;
   text-decoration: none;
@@ -135,4 +140,85 @@
   margin-bottom: 0;
 
 
+}
+
+@media (#{$tablet-width}) {
+  .logo {
+    padding: 40px;
+  }
+  .main-header__toggle {
+    margin-right: 40px;
+  }
+  .intro {
+    background: rgba(0, 0, 0, 0) url("../img/iphone-hand-mobile@1x.png") no-repeat scroll 70% bottom / 470px auto;
+    padding-top: 0;
+    min-height: 620px;
+    margin-bottom: 50px;
+
+  }
+  .intro__download {
+    width: 300px;
+    margin-left: 40px;
+    padding: 100px 0;
+    background-color: transparent;
+    &::before {
+      background: transparent;
+    }
+  }
+  .intro__download-text {
+    font-size: $middle-font-size;
+  }
+}
+
+
+@media (#{$desktop-width}) {
+  .main-header__wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .main-header__navigation {
+    width: 940px;
+    margin: 0 auto;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+  }
+  .main-header__toggle {
+    display: none;
+  }
+  .logo {
+    width: 147px;
+    flex-grow: 0;
+    padding-left: 0;
+  }
+  .main-menu {
+    width: auto;
+    border: none;
+  }
+  .main-menu__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-menu__link a {
+    border: none;
+    background-color: transparent;
+    text-transform: none;
+    font-family: 'OpenSans';
+  }
+  .intro {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+  }
+  .intro__download {
+    margin-left: 0;
+    padding: 110px 0;
+
+  }
+  .intro__download-link {
+    font-size: 21px;
+  }
 }
